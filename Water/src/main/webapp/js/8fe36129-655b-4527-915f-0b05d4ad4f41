@@ -1,0 +1,46 @@
+
+
+ var map8fe36129655b4527915f0b05d4ad4f41;
+    function LoadMap8fe36129655b4527915f0b05d4ad4f41() {
+        
+        var gmapdiv = document.createElement('div');
+        gmapdiv.id ='gmapid-8fe36129-655b-4527-915f-0b05d4ad4f41';
+        gmapdiv.style.width = '350px';
+        gmapdiv.style.height = '250px';
+        document.getElementById('mapid-8fe36129-655b-4527-915f-0b05d4ad4f41').appendChild(gmapdiv);
+
+        
+
+        var mapcenter = new google.maps.LatLng(18.6731051 , 73.8477874);
+        var mapOptions = {
+            zoom: 14,
+            center: mapcenter,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };              
+               
+                mapOptions.mapTypeControl = false;
+
+                
+        mapOptions.scaleControl = true;
+        mapOptions.zoomControlOptions   = {style: google.maps.ZoomControlStyle.DEFAULT};
+        
+
+                mapOptions.overviewMapControl = false;
+           
+        
+                mapOptions.scaleControl = true;
+
+      
+
+        map8fe36129655b4527915f0b05d4ad4f41 = new google.maps.Map(document.getElementById('gmapid-8fe36129-655b-4527-915f-0b05d4ad4f41'), mapOptions);  
+
+var pointGDynamicMarker56326348 = new google.maps.LatLng(18.6731051,73.8477874);
+
+var GDynamicMarker56326348 = new google.maps.Marker({position: pointGDynamicMarker56326348,map: map8fe36129655b4527915f0b05d4ad4f41,draggable: false});
+
+var GDynamicMarker56326348InfoWindow = new google.maps.InfoWindow({content: 'Royal Industries Moshi Pune'});google.maps.event.addListener(GDynamicMarker56326348, 'click', function() { GDynamicMarker56326348InfoWindow.open(map8fe36129655b4527915f0b05d4ad4f41,GDynamicMarker56326348);});
+
+
+    }
+
+    google.maps.event.addDomListener(window, 'load', LoadMap8fe36129655b4527915f0b05d4ad4f41);

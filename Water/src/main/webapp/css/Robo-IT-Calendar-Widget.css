@@ -1,0 +1,44 @@
+.RIT_Cal tr td
+{
+  text-align: center !important;
+  padding: 0;
+  border:1px solid white;
+}
+.RIT_Cal
+{
+  padding: 0;
+  border:0px !important;
+}
+.RIT_Cal thead tr:first-child td:nth-child(1)
+{
+  border-top:0 !important;
+}
+.RIT_Cal tr td:last-child
+{
+  border-right:0px !important;
+}
+.RIT_Cal tr td:first-child
+{
+  border-left:0px !important;
+}
+
+.prev11,.next11
+{
+  cursor: pointer;
+}
+.prev11:hover,.next11:hover
+{
+  opacity: 0.7;
+}
+.week_day11
+{
+  cursor: default;
+}
+.week_day11:hover
+{
+  opacity: 0.7;
+}
+.without1,.month11,.title_name1
+{
+  cursor: default;
+}
